@@ -16,6 +16,15 @@ public class Combate {
 							1.81f, 105.7f, 12, 2, 4);
 		//l[1].apresentar();
 		//l[1].setPeso(50f);
+		//l[1].status();
+		
+		Luta ufc = new Luta();
+		ufc.marcarLuta(l[0], l[1]);
+		ufc.lutar();
+		l[0].status();
 		l[1].status();
+		
+		ufc.marcarLuta(l[2], l[4]);
+		ufc.lutar();
 	}
 }
